@@ -44,7 +44,7 @@ fi
 done
 }
 verify_credentials
-sleep 2
+sleep 5
 clear
 echo "SELAMAT DATANG DI TOOLSRENV2😊"
 sleep 3
