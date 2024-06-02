@@ -1,109 +1,53 @@
-
-"\x1B[31m
-
-░██████╗███████╗██╗░░░░░░█████╗░███╗░░░███╗░█████╗░████████╗
-██╔════╝██╔════╝██║░░░░░██╔══██╗████╗░████║██╔══██╗╚══██╔══╝
-╚█████╗░█████╗░░██║░░░░░███████║██╔████╔██║███████║░░░██║░░░
-░╚═══██╗██╔══╝░░██║░░░░░██╔══██║██║╚██╔╝██║██╔══██║░░░██║░░░
-██████╔╝███████╗███████╗██║░░██║██║░╚═╝░██║██║░░██║░░░██║░░░
-╚═════╝░╚══════╝╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚═╝╚═╝░░╚═╝░░░╚═╝░░░
-
-██████╗░░█████╗░████████╗░█████╗░███╗░░██╗░██████╗░
-██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗████╗░██║██╔════╝░
-██║░░██║███████║░░░██║░░░███████║██╔██╗██║██║░░██╗░
-██║░░██║██╔══██║░░░██║░░░██╔══██║██║╚████║██║░░╚██╗
-██████╔╝██║░░██║░░░██║░░░██║░░██║██║░╚███║╚██████╔╝
-╚═════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝░╚═════╝░
-
-██████╗░███████╗███╗░░██╗░██████╗░░██████╗░██╗░░░██╗███╗░░██╗░█████╗░
-██╔══██╗██╔════╝████╗░██║██╔════╝░██╔════╝░██║░░░██║████╗░██║██╔══██╗
-██████╔╝█████╗░░██╔██╗██║██║░░██╗░██║░░██╗░██║░░░██║██╔██╗██║███████║
-██╔═══╝░██╔══╝░░██║╚████║██║░░╚██╗██║░░╚██╗██║░░░██║██║╚████║██╔══██║
-██║░░░░░███████╗██║░╚███║╚██████╔╝╚██████╔╝╚██████╔╝██║░╚███║██║░░██║
-╚═╝░░░░░╚══════╝╚═╝░░╚══╝░╚═════╝░░╚═════╝░░╚═════╝░╚═╝░░╚══╝╚═╝░░╚═╝
-
-██████╗░██████╗░███████╗███╗░░░███╗██╗██╗░░░██╗███╗░░░███╗
-██╔══██╗██╔══██╗██╔════╝████╗░████║██║██║░░░██║████╗░████║
-██████╔╝██████╔╝█████╗░░██╔████╔██║██║██║░░░██║██╔████╔██║
-██╔═══╝░██╔══██╗██╔══╝░░██║╚██╔╝██║██║██║░░░██║██║╚██╔╝██║
-██║░░░░░██║░░██║███████╗██║░╚═╝░██║██║╚██████╔╝██║░╚═╝░██║
-╚═╝░░░░░╚═╝░░╚═╝╚══════╝╚═╝░░░░░╚═╝╚═╝░╚═════╝░╚═╝░░░░░╚═╝
-
-"
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+# Continue loop until Enter is pressed
+while true; do
+  # Display message and prompt for input
+  echo "Tekan Enter untuk melanjutkan..."
+  read -r -p ""
+  
+  # Check if the user pressed Enter
+  if [[ $REPLY == "" ]]; then
+    # Break out of the loop if Enter is pressed
+    break
+  fi
+done
+sleep 3
+# Continue script execution after Enter is pressed
+echo "Anda telah menekan Enter. Script dilanjutkan..."
+sleep 3
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+echo "sedang memeriksa update🤔"
+sleep 3
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+git pull
+sleep 3
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+verify_credentials() {
+local expected_username="REN"
+local expected_password="99999"
+while true; do
+read -p "Username: " username
+read -s -p "Password: " password
+echo
+if [ "$username" == "$expected_username" ] && [ "$password" == "$expected_password" ]; then
+echo "Login berhasil"
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+echo "FOLLOW AKUN TIKTOK GW WAK"
+sleep 3
+xdg-open "https://www.tiktok.com/@sistem9999?_t=8mE62usv4Br&_r=1"
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
+break
+else
+echo -e "\x1B[31m Username atau password salah. Silakan coba lagi."
+xdg-open "https://wa.me/+6289519450908?text=bang ToolsRenv2 username sama password nya apa?"
+fi
+done
+}
+verify_credentials
+sleep 2
 clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
-clear
-echo "          SELAMAT DATANG DI TOOLSRENV 2"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          sedang memeriksa update 🤔"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-echo "          halo welcome to toolsrenv2"
-sleep 1
-clear
-sleep 1
+echo "SELAMAT DATANG DI TOOLSRENV2😊"
+sleep 3
 echo -e   "\x1B[31m████████╗░█████╗░░█████╗░██╗░░░░░░██████╗██████╗░███████╗███╗░░██╗"
 echo -e   "\x1B[31m╚══██╔══╝██╔══██╗██╔══██╗██║░░░░░██╔════╝██╔══██╗██╔════╝████╗░██║"
 echo -e   "\x1B[31m░░░██║░░░██║░░██║██║░░██║██║░░░░░╚█████╗░██████╔╝█████╗░░██╔██╗██║"
@@ -113,69 +57,68 @@ echo -e   "\x1B[37m░░░╚═╝░░░░╚════╝░░╚═�
 echo
 echo
 echo -e "                       V̳E̳R̳S̳I̳ T̳E̳R̳B̳A̳R̳U̳ T̳O̳O̳L̳S̳R̳E̳N̳v̳2̳"
-echo -e "                            𝐁𝐲: 𝐑𝐄𝐍𝟗𝟗𝟗𝟗 ☕🗿"
-echo -e "\x1B[32m                      
-                ||=======================================||
-                ||        WELCOME TO TOOLSRENv2          ||
-                ||=======================================||
-                ||               MENU SPAM               ||
-                ||=======================================||
-                ||1.spam otp no stop V1 <off>            ||
-                ||2.spam otp no stop V2                  ||
-                ||3.spam otp no stop V3 <off>            ||
-                ||4.spam otp no stop V4                  ||
-                ||5.spam otp no stop V5                  ||
-                ||6.spam otp no stop V6                  ||
-                ||7.spam otp no stop V7                  ||
-                ||8.spam otp no stop V8                  ||
-                ||9.spam otp no stop V9                  ||
-                ||11.spam otp no stop V11                ||
-                ||12.spam otp no stop V12                ||
-                ||13.spam otp no stop V13                ||
-                ||14.spam otp no stop V14                ||
-                ||15.spam otp no stop V15                ||
-                ||=======================================||
-                ||         MENU PHISING & HACKING        ||
-                ||=======================================||
-                ||16..HACK KAMERA                        ||
-                ||17.HACK SOSMED                         ||
-                ||18.HACK CCTV                           ||
-                ||19.PANDORA BY SANZ                     ||
-                ||20.Sploit-Malicious                    ||
-                ||21.diejoubu                            ||
-                ||22.Lazymux                             ||
-                ||23.XPHISHER                            ||
-                ||24.OSGPT                               ||
-                ||25.NETHUNTER M                         ||
-                ||26.GABUT                               ||
-                ||27.sqlmap                              ||
-                ||28.TOOLSINSTALLERv3                    ||
-                ||29.Crack fb                            ||
-                ||30.Crack ig                            ||
-                ||31.instabot                            ||
-                ||33.Tools ABD                           ||
-                ||34.Kirim virus < vbug >                ||
-                ||35.kandura viip                        ||
-                ||36.W0rm-GPT                            ||
-                ||37.tiktok bot                          ||
-                ||=======================================||
-                ||                MENU DDOS              ||
-                ||=======================================||
-                ||38.DDOS V1                             ||
-                ||39.DDOS V2                             ||
-                ||40.DDOS V3                             ||
-                ||41.DDOS V4 < off >                     ||
-                ||42.DDOS V5                             ||
-                ||43.DDOS V6                             ||
-                ||44.DDOS V7                             ||
-                ||=======================================||
-                ||                MENU DLL               ||
-                ||=======================================||
-                ||UPDATE                                 ||
-                ||FOLLOW                                 ||
-                ||bug> laporkan bug                      ||
-                ||0> EXIT                                ||
-                ||=======================================||
+echo -e "                            By: REN9999��☕"
+echo -e "\x1B[92m
+||=======================================||
+||        WELCOME TO TOOLSRENv2          ||
+||=======================================||
+||               MENU SPAM               ||
+||=======================================||
+||1.spam otp no stop V1 <off>            ||
+||2.spam otp no stop V2                  ||
+||3.spam otp no stop V3 <off>            ||
+||4.spam otp no stop V4                  ||
+||5.spam otp no stop V5                  ||
+||6.spam otp no stop V6                  ||
+||7.spam otp no stop V7                  ||
+||8.spam otp no stop V8                  ||
+||9.spam otp no stop V9                  ||
+||11.spam otp no stop V11                ||
+||12.spam otp no stop V12                ||
+||13.spam otp no stop V13                ||
+||14.spam otp no stop V14                ||
+||15.spam otp no stop V15                ||
+||=======================================||
+||         MENU PHISING & HACKING        ||
+||=======================================||
+||16..HACK KAMERA                        ||
+||17.HACK SOSMED                         ||
+||18.HACK CCTV                           ||
+||19.PANDORA BY SANZ                     ||
+||20.Sploit-Malicious                    ||
+||21.diejoubu                            ||
+||22.Lazymux                             ||
+||23.XPHISHER                            ||
+||24.OSGPT                               ||
+||25.NETHUNTER M                         ||
+||26.GABUT                               ||
+||27.sqlmap                              ||
+||28.TOOLSINSTALLERv3                    ||
+||29.Crack fb                            ||
+||30.Crack ig                            ||
+||31.instabot                            ||
+||33.Tools ABD                           ||
+||34.Kirim virus < vbug >                ||
+||35.kandura viip                        ||
+||36.W0rm-GPT                            ||
+||37.tiktok bot                          ||
+||=======================================||
+||                MENU DDOS              ||
+||=======================================||
+||38.DDOS V1                             ||
+||39.DDOS V2                             ||
+||40.DDOS V3                             ||
+||41.DDOS V4 < off >                     ||
+||42.DDOS V5                             ||
+||43.DDOS V6                             ||
+||44.DDOS V7                             ||
+||=======================================||
+||UPDATE                                 ||
+||FOLLOW                                 ||
+||< bug> laporkan bug                    ||
+||< 0 > EXIT                             ||
+||< info > info update                   ||
+||=======================================||
 "
 echo
 read -p "                PILIH MENU:" ren9999
@@ -198,7 +141,7 @@ pkg install python python-pip
 pkg install make clang
 pkg install git
 git clone https://github.com/Sxp-ID/Brutal-W4
- cd Brutal-W4
+cd Brutal-W4
 git pull
 make install
 ./main
@@ -693,9 +636,9 @@ then
 clear
 sleep 1
 git pull
-git clone https://github.com/BOY122333/contoh1.git
-cd contoh1
-bash renn.sh
+git clone https://github.com/BOY122333/ToolsRenv2.git
+cd ToolsRenv2
+bash REN.sh
 fi
 if [ $ren9999 == FOLLOW ]
 then
@@ -715,7 +658,7 @@ fi
 if [ $ren9999 == 0 ]
 then
 clear
-echo "\x1B[31m
+echo "
 ███████╗██╗░░██╗██╗████████╗
 ██╔════╝╚██╗██╔╝██║╚══██╔══╝
 █████╗░░░╚███╔╝░██║░░░██║░░░
@@ -724,9 +667,18 @@ echo "\x1B[31m
 ╚══════╝╚═╝░░╚═╝╚═╝░░░╚═╝░░░
 "
 sleep 1
-echo "[+]         𝗛𝗘𝗡𝗚𝗞𝗘𝗥 𝗥𝗘𝗡𝟵𝟵𝟵𝟵"
+echo "[*] THANKS BRO👍❗❗❗"
 sleep 1
-echo "[+]         𝗦𝗘𝗟𝗔𝗠𝗔𝗧 𝗧𝗜𝗡𝗚𝗚𝗔𝗟❗❗❗"
+echo "[*] TERIMAKASIH SUDAH MENGGUNAKAN TOOLS SAYA😊😊❗❗❗"
 sleep 1
+cd
 exit
+fi
+if [ $ren9999 == info ]
+then
+clear
+sleep 1
+git clone https://github.com/BOY122333/info.git
+cd info
+bash info.sh
 fi
