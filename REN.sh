@@ -1,7 +1,5 @@
 clear
-# Dapatkan jam saat ini
 current_hour=$(date +%H)
-# Periksa apakah sekarang malam, siang, atau pagi
 if [ $current_hour -lt 6 ]; then
   echo "selamat malam ☺"
 elif [ $current_hour -lt 18 ]; then
